@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE urlrewrite
+    PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+    "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+
+
+<urlrewrite >
+
+
+    <rule>
+       <from>^/$</from>
+       <to type="redirect">/ROOT</to>
+    </rule>
+
+    <rule>
+       <from>^/google$</from>
+       <to type="redirect">http://www.google.com</to>
+    </rule>
+
+    <rule>
+       <from>^/canon$</from>
+       <to type="redirect">/inetCA</to>
+    </rule>
+
+    <rule>
+       <from>^/printwirelessly$</from>
+       <to type="redirect">/inetCA/en/products/method/gp/pid/43302</to>
+    </rule>
+
+    <rule>
+       <from>^/optintowin$</from>
+       <to type="redirect">/inetCA/inFrame?m=showInFrame&amp;url=http://canoncanada.custhelp.com/ci/documents/detail/2/Opt-in_contest_2014</to>
+    </rule>
+
+    <rule>
+       <from>^/babymoments$</from>
+       <to type="redirect">https://estore.canon.ca/en-CA/catalog/baby-moments</to>
+    </rule>
+
+    <rule>
+       <from>^/inetCA/homeExt$</from>
+       <to type="redirect">/inetCA/home</to>
+    </rule>
+
+    <rule match-type="wildcard">
+       <from>^/inetCA/userfiles/**</from>
+       <to type="redirect">/inetCAWeb/userfiles/$1</to>
+    </rule>
+
+</urlrewrite>
+
+<!--  
+    <rule>
+       <from>^/inetCA/userfiles/*</from>
+       <to type="redirect">/inetCAWeb/userfiles/$1</to>
+    </rule>
+-->
